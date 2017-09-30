@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <router-link to="home">Home</router-link>
+    <router-link to="/about">About</router-link>
+    <router-link to="/gallery">gallery</router-link>
     <router-view></router-view>
   </div>
 </template>
@@ -19,5 +21,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
 }
 </style>
