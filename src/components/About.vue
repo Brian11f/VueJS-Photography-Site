@@ -1,15 +1,19 @@
 <template>
-  <div class="xs12">
-    <h2>{{ title }}</h2>
-    <img src="http://via.placeholder.com/800x200" alt="">
-    <p>{{ description }}</p>
-    <h3>{{ span }}</h3>
-    <ul>
-      <li v-for="qual in qualifications">
-        {{ qual.qual }}
-      </li>
-    </ul>
-    <img src="http://via.placeholder.com/800x200" alt="">
+  <div class="layout row wrap">
+    <h2 class="text-xs-center">{{ title }}</h2>
+    <img class="hidden-xs-only" src="http://via.placeholder.com/800x200" alt="">
+    <div class="logo hidden-sm-only flex xs12 sm6">
+      <img src="http://via.placeholder.com/300x300" alt="">
+    </div>
+    <div class="flex sm12 md6">
+      <p>{{ description }}</p>
+      <h3>{{ span }}</h3>
+      <ul>
+        <li v-for="qual in qualifications">
+          {{ qual.qual }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -36,5 +40,11 @@ export default {
 </script>
 
 <style scoped>
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 </style>

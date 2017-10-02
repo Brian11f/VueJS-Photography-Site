@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import About from '@/components/About'
 import Gallery from '@/components/Gallery'
+import Investment from '@/components/Investment'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/gallery',
       name: 'Gallery',
       component: Gallery
+    },
+    {
+      path: '/investment',
+      name: 'Investment',
+      component: Investment
     }
   ]
 })

@@ -1,8 +1,9 @@
 <template>
-  <div id="app">
-    <router-link to="home">Home</router-link>
+  <div class="container grid-list-lg text-xs-center" id="app">
+    <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
     <router-link to="/gallery">gallery</router-link>
+    <router-link to="/investment">investment</router-link>
     <router-view></router-view>
   </div>
 </template>
@@ -22,6 +23,8 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+h1, h2 { margin: 0 auto; }
 
 img {
   width: 100%;
