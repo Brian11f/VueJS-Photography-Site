@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 lass="text-xs-center">{{ title }}</h2>
+    <h2 class="text-xs-center">{{ title }}</h2>
     <div class="layout row wrap">
       <p class="flex md6">{{ description.create }}</p>
       <p class="flex md6">
